@@ -118,32 +118,32 @@ Open Active Directory. An easy way is to type "Active Directory Users and Comput
 <img src="https://i.imgur.com/xlxsjdS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Create two organizational Units called "_EMPLOYEES" and "_ADMINS": Right-click on "mydomain.com" -> New -> Organizational unit.
+Create two organizational Units (OU) called "_EMPLOYEES" and "_ADMINS": Right-click on "mydomain.com" -> New -> Organizational unit.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/xlxsjdS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/exCuYmJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Create new Employee: Right-click on _ADMINS -> New -> User.
-  Type in the name (Koby Charis) and create a username (koby.charis) for the employee
+  Type in the name (Koby Charis) and create a username (koby.charis) for the employee. CLick next and set a password for the account.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/BMmnHU1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/9Ob7pvl.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Inside DC-1, open Server Manager and click on "Add Roles and Features"
+Add Employee (koby.charis) to "Domain Admins" Security Group: Open "_ADMINS" OU -> right-click on koby.charis and select properties. Click on "Member of" and type "Domain Admins" in the box. Click OK to add the employee to the Domain Admins group.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/BMmnHU1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/Qc4GpsF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Inside DC-1, open Server Manager and click on "Add Roles and Features"
+Close Remote Desktop Connection and log back in as "mydomain.com\koby.charis"
 </p>
 <br />
 
