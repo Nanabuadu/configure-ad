@@ -54,7 +54,7 @@ Ensure connectivity between the client and Domain Controller: Login to Cleint-1 
 <img src="https://i.imgur.com/2qXyRHv.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Install Active Directory_1: Open Remote Desktop Connection and login to DC-1 with the credentials created in Microsoft Azure.
+Install Active Directory: Open Remote Desktop Connection and login to DC-1 with the credentials created in Microsoft Azure.
 </p>
 <br />
 
@@ -79,6 +79,111 @@ when the installation window pops up, click next -> Ensure the destination Serve
 </p>
 <p>
 After the Active Directory box is checked, click next through the process and install
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/xROd33o.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+The installation is not quite done yet. Go back to the Server Manager window and navigate to the flag icon at the top right corner. Click on the flag and click on "Promote this server to a domain controller.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/XJgaJi9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Select "Add new a forest" -> Set a domain name (my domain.com) -> Click next -> Create a password for Directory Service Restore Mode (DSRM) -> Click next through to the end. After the installation, the Virtual Machine will restart.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/BuKRA2I.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Login back to DC-1 as "mydomain.com\labuser"
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/8rzdBp6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Open Active Directory. An easy way is to type "Active Directory Users and Computers" in the search box
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/xlxsjdS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Create two organizational Units called "_EMPLOYEES" and "_ADMINS": Right-click on "mydomain.com" -> New -> Organizational unit.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/xlxsjdS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Create new Employee: Right-click on _ADMINS -> New -> User.
+  Type in the name (Koby Charis) and create a username (koby.charis) for the employee
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/BMmnHU1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Inside DC-1, open Server Manager and click on "Add Roles and Features"
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/BMmnHU1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Inside DC-1, open Server Manager and click on "Add Roles and Features"
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/BMmnHU1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Inside DC-1, open Server Manager and click on "Add Roles and Features"
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/BMmnHU1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Inside DC-1, open Server Manager and click on "Add Roles and Features"
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/BMmnHU1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Inside DC-1, open Server Manager and click on "Add Roles and Features"
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/BMmnHU1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Inside DC-1, open Server Manager and click on "Add Roles and Features"
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/BMmnHU1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Inside DC-1, open Server Manager and click on "Add Roles and Features"
 </p>
 <br />
 
