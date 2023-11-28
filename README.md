@@ -148,50 +148,50 @@ Close Remote Desktop Connection and log back in as "mydomain.com\koby.charis"
 <br />
 
 <p>
-<img src="https://i.imgur.com/BMmnHU1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/MWSrxAX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Inside DC-1, open Server Manager and click on "Add Roles and Features"
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/BMmnHU1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Inside DC-1, open Server Manager and click on "Add Roles and Features"
+Join Client-1 to your domain (my domain.com): From the Azure portal, set Client-1's DNS settings to the Domain Controller's Private IP Address and restart Client-1
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/BMmnHU1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/F5pViAM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Inside DC-1, open Server Manager and click on "Add Roles and Features"
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/BMmnHU1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Inside DC-1, open Server Manager and click on "Add Roles and Features"
+Login to Client-1 with remote desktop connection as the original local admin (labuser) and join it to the domain. right click on the start menu -> settings -> rename this PC (advanced) -> change -> click on domain -> type in the domain name (mydomain.com) -> Enter the name and password of the domain admin we created previously(mydomain.com\koby.charis) to join the domain. Client-1 will restart.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/BMmnHU1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/xrjLl8Y.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Inside DC-1, open Server Manager and click on "Add Roles and Features"
+After Client-1 has restarted, Log in as the domain admin (koby.charis)
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/BMmnHU1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/pgD9fcS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Inside DC-1, open Server Manager and click on "Add Roles and Features"
+Setup Remote Desktop for non-administrative users on client-1: Right-click on the start menu -> system -> Remote desktop -> click on "select users that can remotely access this PC"
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DRwotlp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Type "domain users" in the box -> click on "check names" and hit OK. now you can remotely log in to client-1 as a domain user.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/M6H31zI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Create additional users with Powershell_Ise and attempt to log into client-1 with one of the users: Login to DC-1 as domain admin (koby.charis) -> open Powershell_ise as an administrator -> create a new file -> run script to create new users
 </p>
 <br />
 
