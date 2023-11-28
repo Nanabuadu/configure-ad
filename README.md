@@ -127,7 +127,7 @@ Create two organizational Units (OU) called "_EMPLOYEES" and "_ADMINS": Right-cl
 </p>
 <p>
 Create new Employee: Right-click on _ADMINS -> New -> User.
-  Type in the name (Koby Charis) and create a username (koby.charis) for the employee. CLick next and set a password for the account.
+  Type in the name (Koby Charis) and create a username (koby.charis) for the employee. Click next and set a password for the account.
 </p>
 <br />
 
@@ -188,33 +188,33 @@ Type "domain users" in the box -> click on "check names" and hit OK. now you can
 <br />
 
 <p>
-<img src="https://i.imgur.com/M6H31zI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/iRpgjDQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Create additional users with Powershell_Ise and attempt to log into client-1 with one of the users: Login to DC-1 as domain admin (koby.charis) -> open Powershell_ise as an administrator -> create a new file -> run script to create new users
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/BMmnHU1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Inside DC-1, open Server Manager and click on "Add Roles and Features"
+Create additional users with Powershell_Ise and attempt to log into client-1 with one of the users: Login to DC-1 as domain admin (koby.charis) -> open Powershell_ise as an administrator -> create a new file -> run script to create new random users with the same password (Password1). 
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/BMmnHU1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/nWtu8W8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Inside DC-1, open Server Manager and click on "Add Roles and Features"
+Attempt to log in to client-1 with one of the random users created
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/BMmnHU1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/bAp197s.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Inside DC-1, open Server Manager and click on "Add Roles and Features"
+Reset Passwords: Right-click on the user's account -> Reset password -> Type in the new password.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/tNVaIyp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Unlock Accounts: Right-click on the locked user account -> Properties -> Account -> Check the "Unlock Account" box.
 </p>
 <br />
